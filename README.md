@@ -45,59 +45,79 @@ Running The Emulator (emu8086) Intro 8086 Microprocessor Emulator, also known as
 
 ### Addition  of 8 bit ALP 
 ```PY
-MOV al,34h
+org 100h
 
-MOV bl,64h
+mov ax,0a123h;
 
-ADD al,bl    
+mov bx,0b456h;
 
-hlt
+add ax,bx;
+
+mov [1234h],ax;
+
+ret
 ```
 ### Output  
+![01](https://github.com/arshatha-palanivel/EXPERIMENT--01-ALP-FOR-8086/assets/118682484/b111f853-54e2-4805-97e0-96d1229b6c35)
 
  
 ### Subtraction   of 8 bit numbers  ALP 
 ```py
-MOV al,34h
+org 100h
 
-MOV bl,64h
+mov ax,0d101h;
 
-SUB al,bl    
+mov bx,0c789h;
 
-hlt
+sub ax,bx;
+
+mov [5678h],ax;
+
+ret
 ```
 
 ### Output  
+![02](https://github.com/arshatha-palanivel/EXPERIMENT--01-ALP-FOR-8086/assets/118682484/105a6676-5012-450c-b916-a75f75278ee2)
 
 ### Multiplication alp 
 ```py
-MOV al,34h
+org 100h
 
-MOV bl,64h
+mov ax,0e112h;
 
-MUL bl    
+mov bx,0f131h;
 
-hlt
+mul bx;
+
+mov [9101h],ax;
+
+ret
 ```
 ### Output  
+![03](https://github.com/arshatha-palanivel/EXPERIMENT--01-ALP-FOR-8086/assets/118682484/f370b030-39c3-4789-9354-6f02a9ca5753)
 
 
 ### Division alp 
 ```py
-MOV al,34h
+org 100h
 
-MOV bl,64h
+mov ax,0b161h;
 
-DIV bl    
+mov bx,0a415h;
 
-hlt
+div bx;
+
+mov [1121h],ax;
+
+ret
 ```
 
 ### Output  
+![04](https://github.com/arshatha-palanivel/EXPERIMENT--01-ALP-FOR-8086/assets/118682484/533dc8cc-4f5c-470b-84f7-32d3e58d288d)
 
 
 ## Result :
-Thus to Write and execute ALP on fundamental arithmetic and logical operations are verified successfully.
+The execution of ALP on fundamental arithmetic and logical operations is successfully completed.
  
 
 
