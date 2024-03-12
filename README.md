@@ -115,6 +115,49 @@ ret
 ### Output  
 ![04](https://github.com/arshatha-palanivel/EXPERIMENT--01-ALP-FOR-8086/assets/118682484/533dc8cc-4f5c-470b-84f7-32d3e58d288d)
 
+### Program for logical operations
+```py
+
+org 100H  
+
+MOV SI,0532H;
+
+MOV AX,0A32H;
+
+MOV BX,0B13H;
+
+OR AX,BX;
+
+MOV [SI],AX;
+
+MOV AX,0A32H;
+
+MOV BX,0B13H;
+
+AND AX,BX; 
+
+MOV [SI+2],AX;
+
+MOV AX,0A32H;
+
+MOV BX,0B13H; 
+
+XOR AX,BX;    
+
+MOV [SI+4],AX;
+
+MOV AX,0A32H;
+
+NOT AX; 
+
+MOV [SI+6],AX;
+
+ret 
+```
+### output
+![05](https://github.com/arshatha-palanivel/EXPERIMENT--01-ALP-FOR-8086/assets/118682484/dfe4dd25-6ff2-4329-8534-d01b04f3403a)
+
+
 
 ## Result :
 The execution of ALP on fundamental arithmetic and logical operations is successfully completed.
